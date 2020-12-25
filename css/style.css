@@ -11,7 +11,7 @@ header {
     height: 50px;
 }
 
-header p {
+header #brand {
     margin: 0 0 0 10px;
     line-height: 50px;
     font-family: 'Allerta', Helvetica, Arial, sans-serif;
@@ -62,12 +62,19 @@ main .\.big_image pre {
 
 main .\.what_we_sale {
     padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main .\.what_we_sale h1 {
     text-align: center;
     font-family: 'Allerta', Helvetica, Arial, sans-serif;
     color: white;
+}
+
+main .\.what_we_sale #pic:hover {
+    opacity: 0.7;
 }
 
 main .comments {
@@ -170,6 +177,8 @@ main .sale {
     padding-top: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: auto;
 }
 
 main .sale h1 {
@@ -179,14 +188,17 @@ main .sale h1 {
 }
 
 main .sale .item_for_sale {
+    background: darkgrey;
+    margin: 0 auto;
     width: 50%;
 }
 
 main .sale .item_for_sale p, img {
+    text-align: center;
     margin: 0 auto;
 }
 
-#request{
+#request {
     padding: 10%;
 }
 
@@ -237,5 +249,61 @@ main .sale .item_for_sale p, img {
     /* The width is the width of the web page */
 }
 
+.contact_info {
+    width: 90%;
+    height: auto;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    font-size: 50px;
+}
 
+#contact_header {
+    width: 100%;
+    height: 20pt;
+    line-height: 20pt;
+}
+
+#p_contact {
+    margin: 0 0 0 15px;
+    display: inline-block;
+}
+
+.popup {
+    width: 60%;
+    height: auto;
+    background: #c1c1c1;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#popup_header {
+    width: 100%;
+    height: 20pt;
+    background: gray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    line-height: 20pt;
+}
+
+#p_popup {
+    margin: 0 0 0 15px;
+    display: inline-block;
+}
+
+.overlay {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: black;
+    opacity: .7;
+}
+
+#close_button_img {
+    height: 15pt;
+    float: right;
+    margin: 2pt 2pt;
+}
 

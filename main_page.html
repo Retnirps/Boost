@@ -6,6 +6,18 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $(".overlay").show();
+            $(".popup").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $(".overlay").hide();
+            $(".popup").hide();
+        }
+    </script>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxknZvUwfS2XGMcOlVF7NDcrnmMhQXP98&callback=initMap&libraries=&v=weekly"
             defer
@@ -14,12 +26,26 @@
 </head>
 <body>
 <header>
-    <p>BOOST by Majesta</p>
-    <a style="text-decoration: none" href="contact.html">
+    <a id="brand" style="text-decoration: none" href="main_page.html">
+        BOOST by Majesta
+    </a>
+    <a style="text-decoration: none; font-family: 'Allerta', Helvetica, Arial, sans-serif;" href="contact.html">
         Contacts
     </a>
 </header>
 <main>
+    <div class="popup">
+        <div id="popup_header">
+            <p id="p_popup">SALE Only Today!!!</p>
+            <a href="javascript:PopUpHide()"><img id="close_button_img"
+                                                  src="https://www.searchpng.com/wp-content/uploads/2019/03/Hold-butt-715x715.png"
+                                                  alt="close_button"></a>
+        </div>
+        <div class="item_for_sale">
+            <img src="https://pbs.twimg.com/media/ESpxOCjWsAEtrkT.jpg" style="width: 100%" alt="">
+            <p>3 Oтметки на КВ-1</p>
+        </div>
+    </div>
     <div class=".big_image">
         <h1>be C00000000L</h1>
         <pre>Buy boosting your account,
@@ -36,7 +62,11 @@
             }
 
             function changePicture() {
-                document.getElementById('pic').src = images[getRandomInt(3)]
+                let choice = getRandomInt(3);
+                while (document.getElementById('pic').src === images[choice]) {
+                    choice = getRandomInt(3);
+                }
+                document.getElementById('pic').src = images[choice]
                 console.log(images[0])
             }
         </script>
@@ -153,11 +183,11 @@
         <div id="requestform">
             <h2 class="requestinfo">Имя</h2>
             <label>
-                <input class="requestinput" placeholder="Иван">
+                <input class="requestinput" placeholder="voin_boec_zahvatchik">
             </label>
             <h2 class="requestinfo">Телефон</h2>
             <label>
-                <input class="requestinput" placeholder="+7(999)999-99-99">
+                <input class="requestinput" placeholder="+7(XXX)XXX-XX-XX">
             </label>
         </div>
     </div>
