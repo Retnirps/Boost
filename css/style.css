@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background-image: url("https://krot.info/timthumb.php?src=https://krot.info/uploads/posts/2020-10/thumbs/1603483457_25-p-temno-serii-fon-27.jpg&w=405&h=280");
+}
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    height: 50px;
+}
+
+header p {
+    margin: 0 0 0 10px;
+    line-height: 50px;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: grey;
+    float: left;
+}
+
+header a {
+    float: right;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #434343;
+}
+
+main {
+    padding-top: 50px;
+}
+
+main .\.big_image {
+    padding-top: 50px;
+    background-image: url("https://wiki.gcdn.co/images/a/a4/%D0%9E%D1%82%D0%BC%D0%B5%D1%82%D0%BA%D0%B8_%D0%BD%D0%B0_%D1%81%D1%82%D0%B2%D0%BE%D0%BB%D0%B0%D1%85.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+    border-bottom-width: 2px; /* Толщина линии внизу */
+    border-bottom-style: solid; /* Стиль линии внизу */
+    border-bottom-color: white; /* Цвет линии внизу */
+}
+
+main .\.big_image h1, pre {
+    margin-left: 560px;
+    text-align: left;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    color: #000000;
+}
+
+main .\.big_image h1 {
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+main .\.big_image pre {
+    font-size: 20px;
+}
+
+main .\.what_we_sale {
+    padding-top: 200px;
+}
+
+main .\.what_we_sale h1 {
+    text-align: center;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+main .comments {
+    padding-top: 200px;
+}
+
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: #fff;
+    padding: 30px;
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+main .best_offers {
+    padding-top: 200px;
+}
+
+main .best_offers .best_offers_examples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .best_offers h1 {
+    text-align: center;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+main .offer {
+    border-radius: 45px 45px 0 0;
+    width: 27%;
+    background-color: darkgrey;
+    overflow: hidden;
+}
+
+main .offer p {
+    text-align: center;
+}
+
+main .sale {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .sale h1 {
+    text-align: center;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+main .sale .item_for_sale {
+    width: 50%;
+}
+
+main .sale .item_for_sale p, img {
+    margin: 0 auto;
+}
+
+#request{
+    padding: 10%;
+}
+
+#requestform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#manager{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Neucha;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top:-2%;
+}
+
+#request {
+    padding-top: 200px;
+}
+
+#request h1{
+    color: white;
+}
+
+#request #manager {
+    padding-top: 200px;
+}
+
+.requestinfo{
+    color: white;
+    font-weight: normal;
+}
+
+.requestinput{
+    font-size: 100%;
+    height: 2vmax;
+    width: 20vmax;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+
+
