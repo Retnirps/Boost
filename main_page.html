@@ -55,16 +55,16 @@
         <h1>What WE sale:</h1>
         <img id="pic" src="https://ru-wotp.wgcdn.co/dcont/fb/image/france.jpg" alt="" onclick="changePicture()"/>
         <script>
-            let images = ["https://ru-wotp.wgcdn.co/dcont/fb/image/france.jpg", "https://worldoftanks.ru/dcont/fb/image/jp.jpg", "https://ru-wotp.wgcdn.co/dcont/fb/image/2014-05-14_173204.jpg"]
+            let images = ["https://ru-wotp.wgcdn.co/dcont/fb/image/france.jpg", "https://worldoftanks.ru/dcont/fb/image/jp.jpg", "https://ru-wotp.wgcdn.co/dcont/fb/image/2014-05-14_173204.jpg", "https://ru-wotp.wgcdn.co/dcont/fb/image/gb.jpg", "https://ru-wotp.wgcdn.co/dcont/fb/image/german.jpg"]
 
             function getRandomInt(max) {
                 return Math.floor(Math.random() * Math.floor(max))
             }
 
             function changePicture() {
-                let choice = getRandomInt(3);
+                let choice = getRandomInt(5);
                 while (document.getElementById('pic').src === images[choice]) {
-                    choice = getRandomInt(3);
+                    choice = getRandomInt(5);
                 }
                 document.getElementById('pic').src = images[choice]
                 console.log(images[0])
